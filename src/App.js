@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './App.css'
 import ArrayExample from "./components/ArrayExample/ArrayExample";
 import ClassExample from "./components/classExample/classExample";
@@ -25,6 +25,9 @@ import { Provider } from "react-redux";
 // import {StateExample} from "./components/StateExample/stateExample";
 
 function App() {
+  useEffect(()=>{
+    console.log('Checking')
+  })
   return (
     // <StateExample />
     <>
